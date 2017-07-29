@@ -29,11 +29,11 @@ Laravel utilizes [Composer](https://getcomposer.org) to manage its dependencies.
 
 You may install Laravel by issuing the Composer `create-project` command in your terminal:
 
-    composer create-project --prefer-dist laravel/laravel blog
+    composer create-project --prefer-dist laravel/laravel greeter
 
 #### Local Development Server
 
 If you have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the `serve` Artisan command. This command will start a development server at `http://localhost:8000`:
 
-    cd blog
+    cd greeter
     php artisan serve
