@@ -1,7 +1,6 @@
 # Routing
 
 - [Basic Routing](#basic-routing)
-- [Named Routes](#named-routes)
 
 <a name="basic-routing"></a>
 ## Basic Routing
@@ -21,36 +20,6 @@ For most applications, you will begin by defining routes in your `routes/web.php
     Route::get('/user', 'UsersController@index');
 
 Routes defined in the `routes/api.php` file are nested within a route group by the `RouteServiceProvider`. Within this group, the `/api` URI prefix is automatically applied so you do not need to manually apply it to every route in the file. You may modify the prefix and other route group options by modifying your `RouteServiceProvider` class.
-
-## Named Routes
-
-Named routes allow the convenient generation of URLs or redirects for specific routes. You may specify a name for a route by chaining the `name` method onto the route definition:
-
-    Route::get('user/profile', function () {
-        //
-    })->name('profile');
-
-You may also specify route names for controller actions:
-
-    Route::get('user/profile', 'UserController@showProfile')->name('profile');
-
-#### Generating URLs To Named Routes
-
-Once you have assigned a name to a given route, you may use the route's name when generating URLs or redirects via the global `route` function:
-
-    // Generating URLs...
-    $url = route('profile');
-
-    // Generating Redirects...
-    return redirect()->route('profile');
-
-If the named route defines parameters, you may pass the parameters as the second argument to the `route` function. The given parameters will automatically be inserted into the URL in their correct positions:
-
-    Route::get('user/{id}/profile', function ($id) {
-        //
-    })->name('profile');
-
-    $url = route('profile', ['id' => 1]);
 
 # Example
 
