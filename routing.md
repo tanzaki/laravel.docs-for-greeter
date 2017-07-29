@@ -55,6 +55,8 @@ If the named route defines parameters, you may pass the parameters as the second
 # Example
 
 ```php
+<?php
+# routes/web.php
 Route::get('/page-show-name', function() {
     return 'Hello '.request('your_name');
 });
