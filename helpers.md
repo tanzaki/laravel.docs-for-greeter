@@ -115,7 +115,7 @@ Laravel includes a variety of global "helper" PHP functions. Many of these funct
 ## Strings
 
 <a name="method-camel-case"></a>
-#### `camel_case()` {#collection-method}
+#### `camel_case()` 
 
 The `camel_case` function converts the given string to `camelCase`:
 
@@ -124,7 +124,7 @@ The `camel_case` function converts the given string to `camelCase`:
     // fooBar
 
 <a name="method-class-basename"></a>
-#### `class_basename()` {#collection-method}
+#### `class_basename()` 
 
 The `class_basename` returns the class name of the given class with the class' namespace removed:
 
@@ -133,7 +133,7 @@ The `class_basename` returns the class name of the given class with the class' n
     // Baz
 
 <a name="method-e"></a>
-#### `e()` {#collection-method}
+#### `e()` 
 
 The `e` function runs PHP's `htmlspecialchars` function with the `double_encode` option set to `false`:
 
@@ -142,7 +142,7 @@ The `e` function runs PHP's `htmlspecialchars` function with the `double_encode`
     // &lt;html&gt;foo&lt;/html&gt;
 
 <a name="method-ends-with"></a>
-#### `ends_with()` {#collection-method}
+#### `ends_with()` 
 
 The `ends_with` function determines if the given string ends with the given value:
 
@@ -151,7 +151,7 @@ The `ends_with` function determines if the given string ends with the given valu
     // true
 
 <a name="method-kebab-case"></a>
-#### `kebab_case()` {#collection-method}
+#### `kebab_case()` 
 
 The `kebab_case` function converts the given string to `kebab-case`:
 
@@ -161,7 +161,7 @@ The `kebab_case` function converts the given string to `kebab-case`:
 
 
 <a name="method-snake-case"></a>
-#### `snake_case()` {#collection-method}
+#### `snake_case()` 
 
 The `snake_case` function converts the given string to `snake_case`:
 
@@ -170,7 +170,7 @@ The `snake_case` function converts the given string to `snake_case`:
     // foo_bar
 
 <a name="method-str-limit"></a>
-#### `str_limit()` {#collection-method}
+#### `str_limit()` 
 
 The `str_limit` function limits the number of characters in a string. The function accepts a string as its first argument and the maximum number of resulting characters as its second argument:
 
@@ -179,7 +179,7 @@ The `str_limit` function limits the number of characters in a string. The functi
     // The PHP...
 
 <a name="method-starts-with"></a>
-#### `starts_with()` {#collection-method}
+#### `starts_with()` 
 
 The `starts_with` function determines if the given string begins with the given value:
 
@@ -188,7 +188,7 @@ The `starts_with` function determines if the given string begins with the given 
     // true
 
 <a name="method-str-after"></a>
-#### `str_after()` {#collection-method}
+#### `str_after()` 
 
 The `str_after` function returns everything after the given value in a string:
 
@@ -197,7 +197,7 @@ The `str_after` function returns everything after the given value in a string:
     // ' a test'
 
 <a name="method-str-before"></a>
-#### `str_before()` {#collection-method}
+#### `str_before()` 
 
 The `str_before` function returns everything before the given value in a string:
 
@@ -206,7 +206,7 @@ The `str_before` function returns everything before the given value in a string:
     // 'Test '
 
 <a name="method-str-contains"></a>
-#### `str_contains()` {#collection-method}
+#### `str_contains()` 
 
 The `str_contains` function determines if the given string contains the given value:
 
@@ -221,7 +221,7 @@ You may also pass an array of values to determine if the given string contains a
     // true
 
 <a name="method-str-finish"></a>
-#### `str_finish()` {#collection-method}
+#### `str_finish()` 
 
 The `str_finish` function adds a single instance of the given value to a string:
 
@@ -230,7 +230,7 @@ The `str_finish` function adds a single instance of the given value to a string:
     // this/string/
 
 <a name="method-str-is"></a>
-#### `str_is()` {#collection-method}
+#### `str_is()` 
 
 The `str_is` function determines if a given string matches a given pattern. Asterisks may be used to indicate wildcards:
 
@@ -243,7 +243,7 @@ The `str_is` function determines if a given string matches a given pattern. Aste
     // false
 
 <a name="method-str-plural"></a>
-#### `str_plural()` {#collection-method}
+#### `str_plural()` 
 
 The `str_plural` function converts a string to its plural form. This function currently only supports the English language:
 
@@ -266,14 +266,14 @@ You may provide an integer as a second argument to the function to retrieve the 
     // child
 
 <a name="method-str-random"></a>
-#### `str_random()` {#collection-method}
+#### `str_random()` 
 
 The `str_random` function generates a random string of the specified length. This function uses PHP's `random_bytes` function:
 
     $string = str_random(40);
 
 <a name="method-str-singular"></a>
-#### `str_singular()` {#collection-method}
+#### `str_singular()` 
 
 The `str_singular` function converts a string to its singular form. This function currently only supports the English language:
 
@@ -282,7 +282,7 @@ The `str_singular` function converts a string to its singular form. This functio
     // car
 
 <a name="method-str-slug"></a>
-#### `str_slug()` {#collection-method}
+#### `str_slug()` 
 
 The `str_slug` function generates a URL friendly "slug" from the given string:
 
@@ -291,7 +291,7 @@ The `str_slug` function generates a URL friendly "slug" from the given string:
     // laravel-5-framework
 
 <a name="method-studly-case"></a>
-#### `studly_case()` {#collection-method}
+#### `studly_case()` 
 
 The `studly_case` function converts the given string to `StudlyCase`:
 
@@ -300,7 +300,7 @@ The `studly_case` function converts the given string to `StudlyCase`:
     // FooBar
 
 <a name="method-title-case"></a>
-#### `title_case()` {#collection-method}
+#### `title_case()` 
 
 The `title_case` function converts the given string to `Title Case`:
 
@@ -309,14 +309,14 @@ The `title_case` function converts the given string to `Title Case`:
     // A Nice Title Uses The Correct Case
 
 <a name="method-trans"></a>
-#### `trans()` {#collection-method}
+#### `trans()` 
 
 The `trans` function translates the given language line using your [localization files](/docs/{{version}}/localization):
 
     echo trans('validation.required'):
 
 <a name="method-trans-choice"></a>
-#### `trans_choice()` {#collection-method}
+#### `trans_choice()` 
 
 The `trans_choice` function translates the given language line with inflection:
 
@@ -326,7 +326,7 @@ The `trans_choice` function translates the given language line with inflection:
 ## URLs
 
 <a name="method-action"></a>
-#### `action()` {#collection-method}
+#### `action()` 
 
 The `action` function generates a URL for the given controller action. You do not need to pass the full namespace to the controller. Instead, pass the controller class name relative to the `App\Http\Controllers` namespace:
 
@@ -337,21 +337,21 @@ If the method accepts route parameters, you may pass them as the second argument
     $url = action('UserController@profile', ['id' => 1]);
 
 <a name="method-asset"></a>
-#### `asset()` {#collection-method}
+#### `asset()` 
 
 Generate a URL for an asset using the current scheme of the request (HTTP or HTTPS):
 
     $url = asset('img/photo.jpg');
 
 <a name="method-secure-asset"></a>
-#### `secure_asset()` {#collection-method}
+#### `secure_asset()` 
 
 Generate a URL for an asset using HTTPS:
 
     echo secure_asset('foo/bar.zip', $title, $attributes = []);
 
 <a name="method-route"></a>
-#### `route()` {#collection-method}
+#### `route()` 
 
 The `route` function generates a URL for the given named route:
 
@@ -366,7 +366,7 @@ By default, the `route` function generates an absolute URL. If you wish to gener
     $url = route('routeName', ['id' => 1], false);
 
 <a name="method-secure-url"></a>
-#### `secure_url()` {#collection-method}
+#### `secure_url()` 
 
 The `secure_url` function generates a fully qualified HTTPS URL to the given path:
 
@@ -375,7 +375,7 @@ The `secure_url` function generates a fully qualified HTTPS URL to the given pat
     echo secure_url('user/profile', [1]);
 
 <a name="method-url"></a>
-#### `url()` {#collection-method}
+#### `url()` 
 
 The `url` function generates a fully qualified URL to the given path:
 
@@ -393,7 +393,7 @@ If no path is provided, a `Illuminate\Routing\UrlGenerator` instance is returned
 ## Miscellaneous
 
 <a name="method-abort"></a>
-#### `abort()` {#collection-method}
+#### `abort()` 
 
 The `abort` function throws a HTTP exception which will be rendered by the exception handler:
 
@@ -404,42 +404,42 @@ You may also provide the exception's response text:
     abort(401, 'Unauthorized.');
 
 <a name="method-abort-if"></a>
-#### `abort_if()` {#collection-method}
+#### `abort_if()` 
 
 The `abort_if` function throws an HTTP exception if a given boolean expression evaluates to `true`:
 
     abort_if(! Auth::user()->isAdmin(), 403);
 
 <a name="method-abort-unless"></a>
-#### `abort_unless()` {#collection-method}
+#### `abort_unless()` 
 
 The `abort_unless` function throws an HTTP exception if a given boolean expression evaluates to `false`:
 
     abort_unless(Auth::user()->isAdmin(), 403);
 
 <a name="method-auth"></a>
-#### `auth()` {#collection-method}
+#### `auth()` 
 
 The `auth` function returns an authenticator instance. You may use it instead of the `Auth` facade for convenience:
 
     $user = auth()->user();
 
 <a name="method-back"></a>
-#### `back()` {#collection-method}
+#### `back()` 
 
 The `back()` function generates a redirect response to the user's previous location:
 
     return back();
 
 <a name="method-bcrypt"></a>
-#### `bcrypt()` {#collection-method}
+#### `bcrypt()` 
 
 The `bcrypt` function hashes the given value using Bcrypt. You may use it as an alternative to the `Hash` facade:
 
     $password = bcrypt('my-secret-password');
 
 <a name="method-cache"></a>
-#### `cache()` {#collection-method}
+#### `cache()` 
 
 The `cache` function may be used to get values from the cache. If the given key does not exist in the cache, an optional default value will be returned:
 
@@ -454,14 +454,14 @@ You may add items to the cache by passing an array of key / value pairs to the f
     cache(['key' => 'value'], Carbon::now()->addSeconds(10));
 
 <a name="method-collect"></a>
-#### `collect()` {#collection-method}
+#### `collect()` 
 
 The `collect` function creates a [collection](/docs/{{version}}/collections) instance from the given array:
 
     $collection = collect(['taylor', 'abigail']);
 
 <a name="method-config"></a>
-#### `config()` {#collection-method}
+#### `config()` 
 
 The `config` function gets the value of a configuration variable. The configuration values may be accessed using "dot" syntax, which includes the name of the file and the option you wish to access. A default value may be specified and is returned if the configuration option does not exist:
 
@@ -474,21 +474,21 @@ The `config` helper may also be used to set configuration variables at runtime b
     config(['app.debug' => true]);
 
 <a name="method-csrf-field"></a>
-#### `csrf_field()` {#collection-method}
+#### `csrf_field()` 
 
 The `csrf_field` function generates an HTML `hidden` input field containing the value of the CSRF token. For example, using [Blade syntax](/docs/{{version}}/blade):
 
     {{ csrf_field() }}
 
 <a name="method-csrf-token"></a>
-#### `csrf_token()` {#collection-method}
+#### `csrf_token()` 
 
 The `csrf_token` function retrieves the value of the current CSRF token:
 
     $token = csrf_token();
 
 <a name="method-dd"></a>
-#### `dd()` {#collection-method}
+#### `dd()` 
 
 The `dd` function dumps the given variables and ends execution of the script:
 
@@ -501,14 +501,14 @@ If you do not want to halt the execution of your script, use the `dump` function
     dump($value);
 
 <a name="method-dispatch"></a>
-#### `dispatch()` {#collection-method}
+#### `dispatch()` 
 
 The `dispatch` function pushes a new job onto the Laravel [job queue](/docs/{{version}}/queues):
 
     dispatch(new App\Jobs\SendEmails);
 
 <a name="method-env"></a>
-#### `env()` {#collection-method}
+#### `env()` 
 
 The `env` function gets the value of an environment variable or returns a default value:
 
@@ -518,21 +518,21 @@ The `env` function gets the value of an environment variable or returns a defaul
     $env = env('APP_ENV', 'production');
 
 <a name="method-event"></a>
-#### `event()` {#collection-method}
+#### `event()` 
 
 The `event` function dispatches the given [event](/docs/{{version}}/events) to its listeners:
 
     event(new UserRegistered($user));
 
 <a name="method-factory"></a>
-#### `factory()` {#collection-method}
+#### `factory()` 
 
 The `factory` function creates a model factory builder for a given class, name, and amount. It can be used while [testing](/docs/{{version}}/database-testing#writing-factories) or [seeding](/docs/{{version}}/seeding#using-model-factories):
 
     $user = factory(App\User::class)->make();
 
 <a name="method-info"></a>
-#### `info()` {#collection-method}
+#### `info()` 
 
 The `info` function will write information to the log:
 
@@ -543,7 +543,7 @@ An array of contextual data may also be passed to the function:
     info('User login attempt failed.', ['id' => $user->id]);
 
 <a name="method-logger"></a>
-#### `logger()` {#collection-method}
+#### `logger()` 
 
 The `logger` function can be used to write a `debug` level message to the log:
 
@@ -558,7 +558,7 @@ A [logger](/docs/{{version}}/errors#logging) instance will be returned if no val
     logger()->error('You are not allowed here.');
 
 <a name="method-method-field"></a>
-#### `method_field()` {#collection-method}
+#### `method_field()` 
 
 The `method_field` function generates an HTML `hidden` input field containing the spoofed value of the form's HTTP verb. For example, using [Blade syntax](/docs/{{version}}/blade):
 
@@ -567,7 +567,7 @@ The `method_field` function generates an HTML `hidden` input field containing th
     </form>
 
 <a name="method-old"></a>
-#### `old()` {#collection-method}
+#### `old()` 
 
 The `old` function [retrieves](/docs/{{version}}/requests#retrieving-input) an old input value flashed into the session:
 
@@ -576,7 +576,7 @@ The `old` function [retrieves](/docs/{{version}}/requests#retrieving-input) an o
     $value = old('value', 'default');
 
 <a name="method-redirect"></a>
-#### `redirect()` {#collection-method}
+#### `redirect()` 
 
 The `redirect` function returns a redirect HTTP response, or returns the redirector instance if called with no arguments:
 
@@ -585,7 +585,7 @@ The `redirect` function returns a redirect HTTP response, or returns the redirec
     return redirect()->route('route.name');
 
 <a name="method-request"></a>
-#### `request()` {#collection-method}
+#### `request()` 
 
 The `request` function returns the current [request](/docs/{{version}}/requests) instance or obtains an input item:
 
@@ -594,7 +594,7 @@ The `request` function returns the current [request](/docs/{{version}}/requests)
     $value = request('key', $default = null)
 
 <a name="method-response"></a>
-#### `response()` {#collection-method}
+#### `response()` 
 
 The `response` function creates a [response](/docs/{{version}}/responses) instance or obtains an instance of the response factory:
 
@@ -603,7 +603,7 @@ The `response` function creates a [response](/docs/{{version}}/responses) instan
     return response()->json(['foo' => 'bar'], 200, $headers);
 
 <a name="method-retry"></a>
-#### `retry()` {#collection-method}
+#### `retry()` 
 
 The `retry` function attempts to execute the given callback until the given maximum attempt threshold is met. If the callback does not throw an exception, it's return value will be returned. If the callback throws an exception, it will automatically be retried. If the maximum attempt count is exceeded, the exception will be thrown:
 
@@ -612,7 +612,7 @@ The `retry` function attempts to execute the given callback until the given maxi
     }, 100);
 
 <a name="method-session"></a>
-#### `session()` {#collection-method}
+#### `session()` 
 
 The `session` function may be used to get or set session values:
 
@@ -629,7 +629,7 @@ The session store will be returned if no value is passed to the function:
     session()->put('key', $value);
 
 <a name="method-value"></a>
-#### `value()` {#collection-method}
+#### `value()` 
 
 The `value` function's behavior will simply return the value it is given. However, if you pass a `Closure` to the function, the `Closure` will be executed then its result will be returned:
 
@@ -638,7 +638,7 @@ The `value` function's behavior will simply return the value it is given. Howeve
     });
 
 <a name="method-view"></a>
-#### `view()` {#collection-method}
+#### `view()` 
 
 The `view` function retrieves a [view](/docs/{{version}}/views) instance:
 
