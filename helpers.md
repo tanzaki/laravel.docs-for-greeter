@@ -103,9 +103,9 @@ Laravel includes a variety of global "helper" PHP functions. Many of these funct
 
 The `class_basename` returns the class name of the given class with the class' namespace removed:
 
-    $class = class_basename('Foo\Bar\Baz');
+    $class = class_basename('App\Foo\Bar\Comment');
 
-    // Baz
+    // Comment
 
 <a name="method-snake-case"></a>
 #### `snake_case()` 
@@ -116,15 +116,23 @@ The `snake_case` function converts the given string to `snake_case`:
 
     // foo_bar
 
+    $snake = snake_case('Comment');
+
+    // comment
+
 
 <a name="method-str-plural"></a>
 #### `str_plural()` 
 
 The `str_plural` function converts a string to its plural form. This function currently only supports the English language:
 
-    $plural = str_plural('car');
+    $plural = str_plural('comment');
 
-    // cars
+    // comments
+
+    $plural = str_plural('task');
+
+    // tasks
 
     $plural = str_plural('child');
 
@@ -145,9 +153,13 @@ You may provide an integer as a second argument to the function to retrieve the 
 
 The `str_singular` function converts a string to its singular form. This function currently only supports the English language:
 
-    $singular = str_singular('cars');
+    $singular = str_singular('comments');
 
-    // car
+    // comment
+    
+    $singular = str_singular('tasks');
+
+    // task
 
 <a name="method-title-case"></a>
 #### `title_case()` 
