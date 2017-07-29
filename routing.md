@@ -51,7 +51,9 @@ If the named route defines parameters, you may pass the parameters as the second
     })->name('profile');
 
     $url = route('profile', ['id' => 1]);
+
 # Example
+
 ```php
 Route::get('/page-show-name', function() {
     return 'Hello '.request('your_name');
