@@ -27,27 +27,11 @@ Laravel includes a variety of global "helper" PHP functions. Many of these funct
 
 <div class="collection-method-list" markdown="1">
 
-[camel_case](#method-camel-case)
 [class_basename](#method-class-basename)
-[e](#method-e)
-[ends_with](#method-ends-with)
-[kebab_case](#method-kebab-case)
 [snake_case](#method-snake-case)
-[str_limit](#method-str-limit)
-[starts_with](#method-starts-with)
-[str_after](#method-str-after)
-[str_before](#method-str-before)
-[str_contains](#method-str-contains)
-[str_finish](#method-str-finish)
-[str_is](#method-str-is)
 [str_plural](#method-str-plural)
-[str_random](#method-str-random)
 [str_singular](#method-str-singular)
-[str_slug](#method-str-slug)
-[studly_case](#method-studly-case)
 [title_case](#method-title-case)
-[trans](#method-trans)
-[trans_choice](#method-trans-choice)
 
 </div>
 
@@ -114,15 +98,6 @@ Laravel includes a variety of global "helper" PHP functions. Many of these funct
 <a name="strings"></a>
 ## Strings
 
-<a name="method-camel-case"></a>
-#### `camel_case()` 
-
-The `camel_case` function converts the given string to `camelCase`:
-
-    $camel = camel_case('foo_bar');
-
-    // fooBar
-
 <a name="method-class-basename"></a>
 #### `class_basename()` 
 
@@ -131,34 +106,6 @@ The `class_basename` returns the class name of the given class with the class' n
     $class = class_basename('Foo\Bar\Baz');
 
     // Baz
-
-<a name="method-e"></a>
-#### `e()` 
-
-The `e` function runs PHP's `htmlspecialchars` function with the `double_encode` option set to `false`:
-
-    echo e('<html>foo</html>');
-
-    // &lt;html&gt;foo&lt;/html&gt;
-
-<a name="method-ends-with"></a>
-#### `ends_with()` 
-
-The `ends_with` function determines if the given string ends with the given value:
-
-    $value = ends_with('This is my name', 'name');
-
-    // true
-
-<a name="method-kebab-case"></a>
-#### `kebab_case()` 
-
-The `kebab_case` function converts the given string to `kebab-case`:
-
-    $value = kebab_case('fooBar');
-
-    // foo-bar
-
 
 <a name="method-snake-case"></a>
 #### `snake_case()` 
@@ -169,78 +116,6 @@ The `snake_case` function converts the given string to `snake_case`:
 
     // foo_bar
 
-<a name="method-str-limit"></a>
-#### `str_limit()` 
-
-The `str_limit` function limits the number of characters in a string. The function accepts a string as its first argument and the maximum number of resulting characters as its second argument:
-
-    $value = str_limit('The PHP framework for web artisans.', 7);
-
-    // The PHP...
-
-<a name="method-starts-with"></a>
-#### `starts_with()` 
-
-The `starts_with` function determines if the given string begins with the given value:
-
-    $value = starts_with('This is my name', 'This');
-
-    // true
-
-<a name="method-str-after"></a>
-#### `str_after()` 
-
-The `str_after` function returns everything after the given value in a string:
-
-    $value = str_after('This is: a test', 'This is:');
-
-    // ' a test'
-
-<a name="method-str-before"></a>
-#### `str_before()` 
-
-The `str_before` function returns everything before the given value in a string:
-
-    $value = str_before('Test :it before', ':it before');
-
-    // 'Test '
-
-<a name="method-str-contains"></a>
-#### `str_contains()` 
-
-The `str_contains` function determines if the given string contains the given value:
-
-    $value = str_contains('This is my name', 'my');
-
-    // true
-
-You may also pass an array of values to determine if the given string contains any of the values:
-
-    $value = str_contains('This is my name', ['my', 'foo']);
-
-    // true
-
-<a name="method-str-finish"></a>
-#### `str_finish()` 
-
-The `str_finish` function adds a single instance of the given value to a string:
-
-    $string = str_finish('this/string', '/');
-
-    // this/string/
-
-<a name="method-str-is"></a>
-#### `str_is()` 
-
-The `str_is` function determines if a given string matches a given pattern. Asterisks may be used to indicate wildcards:
-
-    $value = str_is('foo*', 'foobar');
-
-    // true
-
-    $value = str_is('baz*', 'foobar');
-
-    // false
 
 <a name="method-str-plural"></a>
 #### `str_plural()` 
@@ -265,13 +140,6 @@ You may provide an integer as a second argument to the function to retrieve the 
 
     // child
 
-<a name="method-str-random"></a>
-#### `str_random()` 
-
-The `str_random` function generates a random string of the specified length. This function uses PHP's `random_bytes` function:
-
-    $string = str_random(40);
-
 <a name="method-str-singular"></a>
 #### `str_singular()` 
 
@@ -281,24 +149,6 @@ The `str_singular` function converts a string to its singular form. This functio
 
     // car
 
-<a name="method-str-slug"></a>
-#### `str_slug()` 
-
-The `str_slug` function generates a URL friendly "slug" from the given string:
-
-    $title = str_slug('Laravel 5 Framework', '-');
-
-    // laravel-5-framework
-
-<a name="method-studly-case"></a>
-#### `studly_case()` 
-
-The `studly_case` function converts the given string to `StudlyCase`:
-
-    $value = studly_case('foo_bar');
-
-    // FooBar
-
 <a name="method-title-case"></a>
 #### `title_case()` 
 
@@ -307,20 +157,6 @@ The `title_case` function converts the given string to `Title Case`:
     $title = title_case('a nice title uses the correct case');
 
     // A Nice Title Uses The Correct Case
-
-<a name="method-trans"></a>
-#### `trans()` 
-
-The `trans` function translates the given language line using your [localization files](/docs/{{version}}/localization):
-
-    echo trans('validation.required'):
-
-<a name="method-trans-choice"></a>
-#### `trans_choice()` 
-
-The `trans_choice` function translates the given language line with inflection:
-
-    $value = trans_choice('foo.bar', $count);
 
 <a name="urls"></a>
 ## URLs
