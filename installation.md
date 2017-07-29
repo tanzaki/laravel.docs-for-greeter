@@ -22,15 +22,6 @@ https://bitnami.com/redirect/to/153273/bitnami-wampstack-5.6.31-0-windows-x64-in
 
 so it's highly recommended that you use Bitnami as your local Laravel development environment.
 
-However, if you are not using Bitnami, you will need to make sure your server meets the following requirements:
-
-- PHP >= 5.6.4
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
-
 <a name="installing-laravel"></a>
 ### Installing Laravel
 
