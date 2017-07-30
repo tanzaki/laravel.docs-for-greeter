@@ -48,7 +48,7 @@ Laravel includes a variety of global "helper" PHP functions. Many of these funct
 
 <div class="collection-method-list" markdown="1">
 
-[request](#method-request)
+- [request](#method-request)
 
 </div>
 
